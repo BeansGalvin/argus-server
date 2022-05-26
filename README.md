@@ -1,2 +1,2 @@
 # argus-server
-Serverside of the Argus system
+Serverside of the Argus system.
