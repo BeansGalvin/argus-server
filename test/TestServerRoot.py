@@ -1,4 +1,4 @@
-from starlette.testclient import TestClient
+from starlettce.testclient import TestClient
 import unittest
 from src.ServerRoot import application
 

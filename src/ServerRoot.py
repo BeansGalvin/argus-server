@@ -11,3 +11,7 @@ class ServerRoot():
     @application.get("/myPath")
     async def my_path():
         return {"message": "My Path!"}
+
+    @application.get("/Client")
+    async def client():
+        return {"message": "20"}
