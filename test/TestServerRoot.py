@@ -1,4 +1,4 @@
-from starlettce.testclient import TestClient
+from starlette.testclient import TestClient
 import unittest
 from src.ServerRoot import application
 
@@ -17,3 +17,7 @@ class TestServerRoot(unittest.TestCase, TestClient):
         self.assertIsNotNone(application)
         response = self.client.get("/")
         self.assertEqual(response.json(), {'message': 'Hello World'})
+        response = self.client.get("/myPath")
+        self.assertEqual(response.json(), {'message': 'My Path!'})
+        response = self.client.get("/clients")
+        self.assertEqual(response.json(), {'message': '20'})
